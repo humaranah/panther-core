@@ -7,6 +7,7 @@
     <Authors>Humberto Arana</Authors>
     <Copyright>2020, Humberto Arana</Copyright>
     <Description>Dependency Injection Extensions for Panther.Core</Description>
+    <Version>1.0.0-alpha</Version>
   </PropertyGroup>
 
   <ItemGroup>

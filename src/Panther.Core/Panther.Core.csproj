@@ -8,6 +8,7 @@
     <Company />
     <Description>Core libraries for Panther Music Player</Description>
     <Copyright>2020, Humberto Arana</Copyright>
+    <Version>1.0.0-alpha</Version>
   </PropertyGroup>
 
   <ItemGroup>

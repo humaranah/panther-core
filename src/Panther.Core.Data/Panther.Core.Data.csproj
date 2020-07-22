@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.0.0-alpha</Version>
+    <Authors>Humberto Arana</Authors>
+    <PackageLicenseFile>README.md</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,6 +13,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Panther.Core.Abstractions\Panther.Core.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
