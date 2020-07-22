@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -7,6 +7,10 @@
     <Authors>Humberto Arana</Authors>
     <Description>View Models for Panther.Core</Description>
     <Version>1.0.0-alpha</Version>
+    <RepositoryUrl>https://github.com/humaranah/panther-core</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/humaranah/panther-core</PackageProjectUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>Panther, Music, Player</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
