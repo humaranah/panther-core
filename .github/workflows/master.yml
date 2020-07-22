@@ -1,8 +1,6 @@
 name: Master
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
 
@@ -23,18 +21,3 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-    - name: Publish Panther.Core
-      uses: brandedoutcast/publish-nuget@v2.5.2
-      with:
-          PROJECT_FILE_PATH: src/Panther.Core/Panther.Core.csproj
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-    - name: Publish Panther.Core.DependencyInjection
-      uses: brandedoutcast/publish-nuget@v2.5.2
-      with:
-          PROJECT_FILE_PATH: src/Panther.Core.DependencyInjection/Panther.Core.DependencyInjection.csproj
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-    - name: Publish Panther.Core.ViewModels
-      uses: brandedoutcast/publish-nuget@v2.5.2
-      with:
-          PROJECT_FILE_PATH: src/Panther.Core.ViewModels/Panther.Core.ViewModels.csproj
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
