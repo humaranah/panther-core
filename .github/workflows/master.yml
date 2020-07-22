@@ -1,0 +1,40 @@
+name: Master
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.301
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
+    - name: Publish Panther.Core
+      uses: brandedoutcast/publish-nuget@v2.5.2
+      with:
+          PROJECT_FILE_PATH: src/Panther.Core/Panther.Core.csproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+    - name: Publish Panther.Core.DependencyInjection
+      uses: brandedoutcast/publish-nuget@v2.5.2
+      with:
+          PROJECT_FILE_PATH: src/Panther.Core.DependencyInjection/Panther.Core.DependencyInjection.csproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+    - name: Publish Panther.Core.ViewModels
+      uses: brandedoutcast/publish-nuget@v2.5.2
+      with:
+          PROJECT_FILE_PATH: src/Panther.Core.ViewModels/Panther.Core.ViewModels.csproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
