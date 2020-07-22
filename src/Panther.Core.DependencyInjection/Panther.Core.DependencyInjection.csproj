@@ -8,6 +8,10 @@
     <Copyright>2020, Humberto Arana</Copyright>
     <Description>Dependency Injection Extensions for Panther.Core</Description>
     <Version>1.0.0-alpha</Version>
+    <PackageProjectUrl>https://github.com/humaranah/panther-core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/humaranah/panther-core</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>Panther, Music, Player</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
