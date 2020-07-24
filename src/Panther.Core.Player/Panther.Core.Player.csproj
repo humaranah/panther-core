@@ -4,7 +4,15 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Version>1.0.0-alpha</Version>
     <Authors>Humberto Arana</Authors>
-    <PackageLicenseFile>README.md</PackageLicenseFile>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<Copyright>2020, Humberto Arana</Copyright>
+	<Description>Player implementation for Panther Music Player</Description>
+	<PackageProjectUrl>https://github.com/humaranah/panther-core</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/humaranah/panther-core</RepositoryUrl>
+	<RepositoryType>Git</RepositoryType>
+	<PackageTags>Panther, Music, Player</PackageTags>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,13 +22,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Panther.Core.Abstractions\Panther.Core.Abstractions.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="..\..\README.md">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
   </ItemGroup>
 
 </Project>
