@@ -5,6 +5,14 @@
     <Version>1.0.0-alpha</Version>
     <Authors>Humberto Arana</Authors>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<Copyright>2020, Humberto Arana</Copyright>
+	<Description>Player implementation for Panther Music Player</Description>
+	<PackageProjectUrl>https://github.com/humaranah/panther-core</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/humaranah/panther-core</RepositoryUrl>
+	<RepositoryType>Git</RepositoryType>
+	<PackageTags>Panther, Music, Player</PackageTags>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>

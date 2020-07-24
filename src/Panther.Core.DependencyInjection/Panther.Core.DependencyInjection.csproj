@@ -12,6 +12,7 @@
     <RepositoryUrl>https://github.com/humaranah/panther-core</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>Panther, Music, Player</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>

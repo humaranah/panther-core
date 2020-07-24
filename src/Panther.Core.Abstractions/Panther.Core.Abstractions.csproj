@@ -2,10 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.0-alpha</Version>
     <Authors>Humberto Arana</Authors>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+	<PackageProjectUrl>https://github.com/humaranah/panther-core</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/humaranah/panther-core</RepositoryUrl>
+	<Description>Abstractions of the Panther Core Libraries</Description>
+	<Copyright>2020, Humberto Arana</Copyright>
+	<RepositoryType>Git</RepositoryType>
+	<PackageTags>Panther, Music, Player</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

@@ -19,16 +19,37 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
-    - name: Publish Panther.Core
+
+    - name: Publish Panther.Core.Abstractions
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
-          PROJECT_FILE_PATH: src/Panther.Core/Panther.Core.csproj
+          PROJECT_FILE_PATH: src/Panther.Core.Abstractions/Panther.Core.Abstractions.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+
+    - name: Publish Panther.Core.Data
+      uses: brandedoutcast/publish-nuget@v2.5.2
+      with:
+          PROJECT_FILE_PATH: src/Panther.Core.Data/Panther.Core.Data.csproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+
+    - name: Publish Panther.Core.Library
+      uses: brandedoutcast/publish-nuget@v2.5.2
+      with:
+          PROJECT_FILE_PATH: src/Panther.Core.Library/Panther.Core.Library.csproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+
+    - name: Publish Panther.Core.Player
+      uses: brandedoutcast/publish-nuget@v2.5.2
+      with:
+          PROJECT_FILE_PATH: src/Panther.Core.Player/Panther.Core.Player.csproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+
     - name: Publish Panther.Core.DependencyInjection
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
           PROJECT_FILE_PATH: src/Panther.Core.DependencyInjection/Panther.Core.DependencyInjection.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+
     - name: Publish Panther.Core.ViewModels
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:

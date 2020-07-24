@@ -11,6 +11,8 @@
     <PackageProjectUrl>https://github.com/humaranah/panther-core</PackageProjectUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>Panther, Music, Player</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Copyright>2020, Humberto Arana</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
